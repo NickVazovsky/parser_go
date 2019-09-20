@@ -1,0 +1,611 @@
+{% extends 'base.html' %}
+{% block content %}
+  <section id="about-banner">
+
+            <div class="menu">
+                <nav class="navbar navbar-default menu_top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                          {% load static %}
+                        <a href="/" class="logo"><img src="{% static 'img/logo.gif' %}"></a>
+                   </div>
+                    <div class="collapse navbar-collapse" id="main-menu" >
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="about.html">О сервисе</a></li>
+                            <li><a href="#advance">VERSUS сайтов</a></li>
+                            <li><a href="#project">Автоматический парсинг</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+</section>
+<section id="content-pars">
+    <div class="container">
+        <div class="row main-content">
+            <div class="col-md-12 text-banner text-center">
+                <h1>Результаты анализа</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row tab-menu">
+            <div class="col-md-2 col-sm-2 tab-result ">
+                <h2 class="">
+                    <a id="all-pars" class="active all-tab">Общая оценка</a>
+                </h2>
+            </div>
+             <div class="col-md-2 col-sm-2 tab-result ">
+                <h2 class="">
+                    <a id="opt-pars" class="opt-tab">Оптимизация</a>
+                </h2>
+            </div>
+            <div class="col-md-2 col-sm-2 tab-result">
+                <h2 class="">
+                    <a id="index-pars" class="index-tab">Индексация</a>
+                </h2>
+            </div>
+            <div class="col-md-offset-4 col-md-2 col-sm-2 tab-result">
+                <h2 class="">
+                    <a id="download-list">Скачать отчет</a>
+                </h2>
+            </div>
+        </div>
+    <div class="down-list-varius">
+        <a class="close-export">
+            <i class="fa fa-times"></i>
+        </a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Экспорт анализа</h1>
+                </div>
+                <div class="col-md-12 text-center">
+                    <p>Вы можете скачать результаты парсинга сайта в различных форматах.</p>
+                </div>
+                <div class="col-md-12 text-center">
+                    <form method="post">
+                        <select class="" id="sel1">
+                            <option>Excell</option>
+                            <option>CSV</option>
+                            <option>PDF</option>
+                        </select>
+                        <input type="submit" name="analiz" value="Скачать">
+                        <div class="row">
+                            <br>
+                    </div>
+            </form>
+        </div>
+    </div>
+        </div>
+    </div>
+
+
+    <div class="final-score">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                {% load static %}
+                <img src="{% static 'questions/img/res.gif' %}">
+            </div>
+            <div class="col-md-9 col-sm-9">
+                <h1>khrenoffmaxim.ru</h1>
+                <p>02.03.18<span>17:25</span></p>
+            </div>
+            <div class="col-md-12 text-center">
+                <h2>На данном сайте обнаружено множество ошибок</h2>
+            </div>
+        </div>
+    </div>
+    <div class="optim-block ruk-opt">
+
+        <div class="optimiz">
+    <section class="ruk-opt">
+
+            <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-5 col-md-5">
+                                <h3>Tittle:<span>SEO PARSER</span><br><span class="long-title">Длина: </b> 9 символов</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>Другие страницы:</h3>
+                            </div>
+
+                            <div class="col-md-12">
+                                <table class="table table-fixed">
+                                <thead>
+                                <tr>
+                                    <th class="col-xs-6">URL</th>
+                                    <th class="col-xs-6">Tittle</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-6">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                    <td class="col-xs-6">@fat</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                    <td class="col-xs-6">@twitter</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-6">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                    <td class="col-xs-6">@fat</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                    <td class="col-xs-6">@twitter</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-6">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                    <td class="col-xs-6">@fat</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                    <td class="col-xs-6">@twitter</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12">
+
+                                <h3>Keywords:<span>SEO PARSER< Pars, jdsjd, dsajdsada, dsajdaskdj ,asdasdasdj</span></h3>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>Другие страницы:</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <table class="table table-fixed">
+                                    <thead class="thead-inverse">
+                                    <tr>
+                                        <th class="col-xs-6">URL</th>
+                                        <th class="col-xs-6">Keywords</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                        <td class="col-xs-6">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                        <td class="col-xs-6">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                        <td class="col-xs-6">@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                        <td class="col-xs-6">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                        <td class="col-xs-6">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                        <td class="col-xs-6">@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+
+                                <h3>Description:<span>SEO PARSER< Pars, jdsjd, dsajdsada, dsajdaskdj ,asdasdasdj</span><br><span class="long-desc">Длина: </b> 9 символов</span></h3>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>Другие страницы:</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <table class="table table-fixed">
+                                    <thead class="thead-inverse">
+                                    <tr>
+                                        <th class="col-xs-6">URL</th>
+                                        <th class="col-xs-6">description</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                        <td class="col-xs-6">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                        <td class="col-xs-6">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                        <td class="col-xs-6">@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                        <td class="col-xs-6">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                        <td class="col-xs-6">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                        <td class="col-xs-6">@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+        </section>
+                <section class="part-pars">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <h3>H1:<span>Продажа песен в Москве</span><br><span class="long-title">Длина: </b> 9 символов</span></h3>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h3>Другие страницы:</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <table class="table table-fixed">
+                                    <thead class="thead-inverse">
+                                    <tr>
+                                        <th class="col-xs-6">URL</th>
+                                        <th class="col-xs-6">H1</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                        <td class="col-xs-6">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                        <td class="col-xs-6">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                        <td class="col-xs-6">@twitter</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                        <td class="col-xs-6">@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                        <td class="col-xs-6">@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                        <td class="col-xs-6">@twitter</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Кол-во загаловков на сайте:</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-fixed">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th class="col-xs-3">H1</th>
+                                <th class="col-xs-3">H2</th>
+                                <th class="col-xs-3">H3</th>
+                                <th class="col-xs-3">H4</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-xs-3">1</td>
+                                <td class="col-xs-3">5</td>
+                                <td class="col-xs-3">3</td>
+                                <td class="col-xs-3">2</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                    </section>
+
+    <section class="">
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <h3>Битые ссылки</h3>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <p>Колличество <span> 15 </span></p>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-fixed">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th class="col-xs-6">Link</th>
+                                <th class="col-xs-6">Error</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-xs-6"> https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-6">@mdo</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                <td class="col-xs-6">@fat</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                <td class="col-xs-6">@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <h3>Заспамленность:</h3>
+                    </div>
+                    <div class="col-md-9 col-sm-9">
+                        <p>18%</p>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-fixed">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th class="col-xs-6">URL</th>
+                                <th class="col-xs-6">%</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-6">14</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                <td class="col-xs-6">43</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                <td class="col-xs-6">43</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+        </section>
+    <section class="part-pars">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <h3>Кол-во слов и тошнота:</h3>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-fixed">
+                            <thead class="thead-inverse">
+                            <tr>
+                                <th class="col-xs-4">URL</th>
+                                <th class="col-xs-4">Кол-во слов</th>
+                                <th class="col-xs-4">Тошнотность %</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                <td class="col-xs-4">14</td>
+                                <td class="col-xs-4">14</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1edit</td>
+                                <td class="col-xs-4">43</td>
+                                <td class="col-xs-4">43</td>
+                            </tr>
+                            <tr>
+                                <td class="col-xs-4">https://docs.google.com/document/d/1t</td>
+                                <td class="col-xs-4">43</td>
+                                <td class="col-xs-4">43</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+        </section>
+    <section class="part-pars">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Yandex Метрика: <span class="status-ok">Есть</span></h3>
+                        <h3>Google Analytics: <span class="status-err">Нет</span></h3>
+                    </div>
+                    <div class="col-md-12"></div>
+                </div>
+        </section>
+
+
+    </div>
+</div>
+
+<div class="index-block index-opt">
+    <div class="index">
+        <div class="row tab-menu">
+             <div class="col-md-2 col-sm-2 tab-result ">
+                <h2 class="">
+                    <a id="ya" class="active action-ya" >Яндекс</a>
+                </h2>
+            </div>
+            <div class="col-md-2 col-sm-2 tab-result">
+                <h2 class="">
+                    <a id="goo" class="action-go" >Google</a>
+                </h2>
+            </div>
+        </div>
+            <section class="part-pars">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="yandex">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <h3>Позиция в поисковой выдачи Яндекса:</h3>
+                                </div>
+                                <div class="col-md-12">
+                                    <table class="table table-fixed">
+                                        <thead class="thead-inverse">
+                                        <tr>
+                                            <th class="col-xs-6">Место</th>
+                                            <th class="col-xs-6">Страница</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                            <td class="col-xs-6">14</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                            <td class="col-xs-6">43</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                            <td class="col-xs-6">43</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-12">
+                                    <h3>Сниппет</h3>
+                                </div>
+                                <div class="col-md-12 snipet">
+                                    <h3>Проверка текста на уникальность онлайн, эффективный.</h3>
+                                    <a href="">text.ru</a>
+                                    <p>Сервис онлайн проверки текста на уникальность TEXT.RU покажет процент уникальности текста.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="google">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12">
+                                    <h3>Позиция в поисковой выдачи Google:</h3>
+                                </div>
+                                <div class="col-md-12">
+                                    <table class="table table-fixed">
+                                        <thead class="thead-inverse">
+                                        <tr>
+                                            <th class="col-xs-6">Место</th>
+                                            <th class="col-xs-6">Страница</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="col-xs-6">https://docs.google.com/document/d/1gAt</td>
+                                                <td class="col-xs-6">14</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-6">https://docs.google.com/document/d/1edit</td>
+                                                <td class="col-xs-6">43</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-xs-6">https://docs.google.com/document/d/1t</td>
+                                                <td class="col-xs-6">43</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-12">
+                                    <h3>Сниппет</h3>
+                                </div>
+                                <div class="col-md-12 snipet">
+                                    <h3>Проверка текста на уникальность онлайн, эффективный.</h3>
+                                    <a href="">text.ru</a>
+                                    <p>Сервис онлайн проверки текста на уникальность TEXT.RU покажет процент уникальности текста.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+                <section class="">
+                        <div class="row">
+                            <div class="col-md-12 social-network">
+                                <h3>Социальные сети</h3>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h4>Facebook:<span class="status-ok">Есть</span></h4>
+                                        <h4>Вконтакте:<span class="status-err">Есть</span></h4>
+                                        <h4>Instagram:<span class="status-ok">Есть</span></h4>
+                                        <h4>Twitter:<span class="status-ok">Есть</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+
+</section>
+        </div>
+</div>
+
+</section>
+{% endblock %}

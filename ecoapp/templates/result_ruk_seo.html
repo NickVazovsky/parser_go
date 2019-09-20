@@ -1,0 +1,315 @@
+{% extends 'base.html' %}
+{% block content %}
+   <section id="about-banner">
+    <div class="container">
+        <div class="row">
+            <div class="menu">
+                <nav class="navbar navbar-default menu_top">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                         {% load static %}
+                        <a href="/" class="logo"><img src="{% static 'img/logo.gif' %}"></a>
+                   </div>
+                    <div class="collapse navbar-collapse" id="main-menu" >
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="about.html">О сервисе</a></li>
+                            <li><a href="#advance">VERSUS сайтов</a></li>
+                            <li><a href="#project">Автоматический парсинг</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row main-content">
+            <div class="col-md-12 text-banner text-center">
+                <h1>Результаты парсинга</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="result-optim">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-3 tab-result ">
+                <h2 class="text-center"><a href="result-ruk.html"> Общая оценка</a></h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result ">
+                <h2 class="text-center">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Оптимизация<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" class="tkd-js">Tittle, Keywords, Description</a></li>
+                                <li><a href="#" class="header-js">Заголовки</a></li>
+                                <li><a href="#" class="untext-js">Уникальность текста</a></li>
+                                <li><a href="#" class="erlink-js">Битые ссылки, счетчики</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result">
+                <h2 class="text-center">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="result-ruk-index.html" class="dropdown-toggle" data-toggle="dropdown">Индексация<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="result-ruk-index.html" class="yaruk-js">Яндекс</a></li>
+                                <li><a href="result-ruk-index.html" class="goruk-js">Google</a></li>
+                                <li><a href="result-ruk-index.html" class="smmruk-js">Социальные сети</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </h2>
+            </div>
+            <div class="col-md-3 col-sm-3 tab-result">
+                <h2 class="text-center"><a href="exportdate.html">Экспорт данных</a></h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="seo-ruk">
+    <div class="container">
+        <div class="ruk-tkd">
+            <div class="row">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Title</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Keywords</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Description</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <div class="col-md-6 col-sm-6">
+                            <h3>Title</h3>
+                            <h4>Всего на сайте: <span>50</span></h4>
+                            <h4>Ошибок найдено: <span>50</span></h4>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h4>Продажа легковых автомобилей в москве</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table table-fixed">
+                                <thead>
+                                <tr>
+                                    <th class="col-xs-4">URL</th>
+                                    <th class="col-xs-4">Tittle</th>
+                                    <th class="col-xs-4">Ошибка</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <div class="col-md-6 col-sm-6">
+                            <h3>Keywords</h3>
+                            <h4>Всего на сайте: <span>50</span></h4>
+                            <h4>Ошибок найдено: <span>50</span></h4>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h4>Продажа автомобилей, автомобили москва, купить авто</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table table-fixed">
+                                <thead>
+                                <tr>
+                                    <th class="col-xs-4">URL</th>
+                                    <th class="col-xs-4">Keywords</th>
+                                    <th class="col-xs-4">Ошибка</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <div class="col-md-6 col-sm-6">
+                            <h3>Description</h3>
+                            <h4>Всего на сайте: <span>50</span></h4>
+                            <h4>Ошибок найдено: <span>50</span></h4>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h4>Наш салон занимается продажами автомобилей в Москве и области. Самые низкие цены только у нас.</h4>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table table-fixed">
+                                <thead>
+                                <tr>
+                                    <th class="col-xs-4">URL</th>
+                                    <th class="col-xs-4">Description</th>
+                                    <th class="col-xs-4">Ошибка</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                    <td class="col-xs-4">@mdo</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ruk-header">
+            <div class="col-md-12 col-sm-12">
+                <h3>Заголовки</h3>
+                <h4>Всего на сайте: <span>50</span></h4>
+                <h4>Ошибок найдено: <span>50</span></h4>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-fixed">
+                    <thead>
+                    <tr>
+                        <th class="col-xs-3">H1</th>
+                        <th class="col-xs-3">H2</th>
+                        <th class="col-xs-3">H3</th>
+                        <th class="col-xs-3">H4</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="col-xs-3">21</td>
+                        <td class="col-xs-3">21</td>
+                        <td class="col-xs-3">21</td>
+                        <td class="col-xs-3">21</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-fixed">
+                    <thead>
+                    <tr>
+                        <th class="col-xs-4">URL</th>
+                        <th class="col-xs-4">Заголовок</th>
+                        <th class="col-xs-4">Ошибка</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                        <td class="col-xs-4">@mdo</td>
+                        <td class="col-xs-4">@mdo</td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                        <td class="col-xs-4">@mdo</td>
+                        <td class="col-xs-4">@mdo</td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                        <td class="col-xs-4">@mdo</td>
+                        <td class="col-xs-4">@mdo</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="ruk-untext">
+            <div class="col-md-12">
+                <h3>Уникальность текста: <span>83%</span></h3>
+            </div>
+            <div class="col-md-12">
+                <p>ldkfjdklsajflk d  djfha fhdakj d;k adkjfh ds kf hajhf ds ldkfjdklsajflk d  djfha fhdakj d;k adkjfh ds kf hajhf ds ldkfjdklsajflk d  djfha fhdakj d;k adkjfh ds kf hajhf ds ldkfjdklsajflk d  djfha fhdakj d;k adkjfh ds kf hajhf ds</p>
+            </div>
+        </div>
+        <div class="ruk-link">
+            <div class="col-md-12">
+                <h3>Битые ссылки: <span> 4</span></h3>
+                <h3>Метрика Yandex: <span>4</span></h3>
+                <h3>Метрика Google: <span>4</span></h3>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-fixed">
+                    <thead>
+                    <tr>
+                        <th class="col-xs-3">URL</th>
+                        <th class="col-xs-3">Tittle</th>
+                        <th class="col-xs-3">Статус</th>
+                        <th class="col-xs-3">Счетчик</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="col-xs-3">https://docs.google.com/document/d/1gAt</td>
+                        <td class="col-xs-3">@mdo</td>
+                        <td class="col-xs-3">404</td>
+                    <tr>
+                    <tr>
+                        <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                        <td class="col-xs-4">@mdo</td>
+                        <td class="col-xs-4">404</td>
+                    </tr>
+                    <tr>
+                        <td class="col-xs-4">https://docs.google.com/document/d/1gAt</td>
+                        <td class="col-xs-4">@mdo</td>
+                        <td class="col-xs-4">404</td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
