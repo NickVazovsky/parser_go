@@ -9,7 +9,7 @@ cffi==1.12.3
 constantly==15.1.0
 cryptography==2.7
 cssselect==1.1.0
-Django==1.11.8
+Django==1.11.23
 hyperlink==19.0.0
 idna==2.8
 importlib-metadata==0.22
